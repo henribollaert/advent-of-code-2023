@@ -3,17 +3,17 @@ from timeit import default_timer as timer
 
 DAY = "00"
 
-def parse(lines):
+def parse(lines: list[str]):
     pass
 
-def part1(lines):
+def part1(lines: list[str]) -> str:
     start = timer()
 
     end = timer()
 
     print(f'In {(end - start)*1000}ms.')
 
-def part2(lines):
+def part2(lines: list[str]) -> str:
     start = timer()
 
     end = timer()
