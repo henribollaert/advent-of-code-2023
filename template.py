@@ -2,6 +2,7 @@ import os
 from timeit import default_timer as timer
 
 DAY = "00"
+TEST = True
 
 def parse(lines: list[str]):
     pass
@@ -15,7 +16,7 @@ def part2(lines: list[str]):
 def main():
     __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-    f = open(os.path.join(__location__, f'input-{DAY}.txt'), 'r')
+    f = open(os.path.join(__location__, f'{"test" if TEST else "input"}-{DAY}.txt'), 'r')
     lines = [line.strip() for line in f.readlines()]
     f.close()
 
